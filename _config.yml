@@ -18,12 +18,12 @@ sidebar-avatar: /img/about-William.jpg      # use absolute URL, seeing it's used
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-# zhihu_username:     qiubaiying
+# weibo_username:   
+# zhihu_username:     
 github_username:    kobewilliam
 facebook_username:  song.william.7505
-# jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+# jianshu_username:  
+#twitter_username:   
 
 
 
@@ -77,8 +77,8 @@ gitalk:
 ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-162521048-1'            # Format: UA-xxxxxx-xx
+ga_domain: clever-song.site               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,17 +99,14 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "东北大学🇨🇳",
+        href: "https://www.neu.edu.cn/"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "UCI🇺🇸",
+        href: "https://uci.edu/"
     },{
-        title: "Apple",
+        title: "Apple",
         href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
     }
 ]
 
