@@ -1,10 +1,10 @@
 # Site settings
-title: William Song's room~
+title: William Song
 SEOTitle: William Song |  Blog
 header-img: img/post-bg-desk.jpg
 email: qingys1@uci.edu
 description: "Welcome"
-keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
+keyword: "宋清宇 个人主页"
 url: "http://kobewilliam.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/kobewilliam/kobewilliam.github.io.git" # you code repository
