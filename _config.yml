@@ -99,13 +99,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "东北大学🇨🇳",
+        title: "NEU",
         href: "https://www.neu.edu.cn/"
     },{
-        title: "UCI🇺🇸",
+        title: "UCI",
         href: "https://uci.edu/"
     },{
-        title: "Apple",
+        title: "Apple",
         href: "https://apple.com"
     }
 ]
