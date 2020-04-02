@@ -1,1 +1,10 @@
-<!-- @import "../resume/Resume.pdf" -->
+---
+title:      YoloV3使用
+subtitle:   手把手教你如何train和test自己的数据(如果不踩坑的话🙈🙊🙉)
+date:       2020-04-01
+author:     William Song
+header-img: img/post-bg-re-vs-ng2.jpg
+catalog: true
+tags:
+    - Blog
+---
