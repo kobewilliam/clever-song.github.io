@@ -1,12 +1,58 @@
-# LeetCode 第 15 号问题：三数之和
+---
+title:      LeetCode中HashMap例题
+subtitle:   hashmap在python中的应用(dict)
+date:       2020-04-09
+author:     William Song
+header-img: img/post-bg-re-vs-ng2.jpg
+catalog: true
+tags:
+    - Algorithm
+---
 
-题目来源于 LeetCode 上第 15 号问题：3Sum
+# LeetCode No 15 Question：3Sum
 
-### 题目描述
+The question is from  LeetCode No 15 Question：3Sum
+
+### Desrciption
 
 Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
-### 题目解析
 
-题目需要我们找出三个数且和为 0 ，那么除了三个数全是 0 的情况之外，肯定会有负数和正数，所以一开始可以先选择一个数，然后再去找另外两个数，这样只要找到两个数且和为第一个选择的数的相反数就行了。也就是说需要枚举 a 和 b ，将 c 的存入 map 即可。
+### Analysis
 
-需要注意的是返回的结果中，不能有有重复的结果。这样的代码时间复杂度是 O(n^2)。在这里可以先将原数组进行排序，然后再遍历排序后的数组，这样就可以使用双指针以线性时间复杂度来遍历所有满足题意的两个数组合。
+题目中需要找出三个数 a,b,c 并满足 a+b+c = 0.那么可以先循环找出 a,b 接下来c便可以用 0 - a - b 来表示。 为了减少时间复杂度，可以先将数组排序，接下来通过两个pointer一个从左，一个从右开始遍历数组。 在遍历的时候，当我们第一次得到正数的时候，这个正数后面2个数必然为正数（数组以及排序），那么我们可以直接break，因为无论怎样这三个数或者再往后都无法相加等于0。
+
+### Code
+
+### 
+
+```python
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        
+        used = set()  # 避免重复使用       
+        nums.sort()
+        n = len(nums)
+        solution = []
+        for i in range(n-2): 
+            if nums[i] > 0:     # 如果遇见大于0的可以直接跳过，因为后面都会大于0    
+                break	
+            if nums[i] in used: # 防止重复
+                continue	
+            used.add(nums[i])
+            prev = i+1   #左pointer 
+            last = n-1   #右pointer
+            while prev!=last :
+                c = nums[i] + nums[prev] +nums[last]
+                if c<0:   # 如果c<0证明左边太小，右pointer往右移动
+                    prev+=1
+                elif c>0: # 如果c>0证明右边太大，右pointer向左移动
+                    last-=1
+                else:     # c=0符合条件
+                    answer = [nums[i],nums[prev],nums[last]]
+                    if not solution:
+                        solution.append(answer)  
+                    elif solution[-1]!=answer: #防止结果重复
+                        solution.append(answer)   
+                    prev+=1
+        return solution
+```
