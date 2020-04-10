@@ -29,17 +29,21 @@ Given an array nums of n integers, are there elements a, b, c in nums such that 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         
-        used = set()  # 避免重复使用       
+        used = set()  # 避免重复使用
+        
         nums.sort()
         n = len(nums)
         solution = []
         for i in range(n-2): 
-            if nums[i] > 0:     # 如果遇见大于0的可以直接跳过，因为后面都会大于0    
+            if nums[i] > 0:     # 如果遇见大于0的可以直接跳过，因为后面都会大于0 
+            
                 break	
             if nums[i] in used: # 防止重复
+            
                 continue	
             used.add(nums[i])
             prev = i+1   #左pointer 
+
             last = n-1   #右pointer
              
             while prev!=last :
