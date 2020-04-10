@@ -43,16 +43,16 @@ class Solution:
             last = n-1   #右pointer
             while prev!=last :
                 c = nums[i] + nums[prev] +nums[last]
-                if c<0:   # 如果c<0证明左边太小，右pointer往右移动
-                    prev+=1
-                elif c>0: # 如果c>0证明右边太大，右pointer向左移动
-                    last-=1
+                if c<0:  prev+=1 # 如果c<0证明左边太小，右pointer往右移动
+                    
+                elif c>0: last-=1# 如果c>0证明右边太大，右pointer向左移动
+                    
                 else:     # c=0符合条件
                     answer = [nums[i],nums[prev],nums[last]]
                     if not solution:
                         solution.append(answer)  
-                    elif solution[-1]!=answer: #防止结果重复
-                        solution.append(answer)   
+                    elif solution[-1]!=answer:  solution.append(answer) #防止结果重复
+                        
                     prev+=1
         return solution
 ```
