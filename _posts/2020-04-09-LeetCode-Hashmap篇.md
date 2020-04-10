@@ -53,6 +53,7 @@ class Solution:
                 elif c>0: last-=1# 如果c>0证明右边太大，右pointer向左移动
                     
                 else:     # c=0符合条件
+                
                     answer = [nums[i],nums[prev],nums[last]]
                     if not solution:
                         solution.append(answer)  
