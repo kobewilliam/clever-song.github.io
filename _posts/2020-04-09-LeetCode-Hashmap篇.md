@@ -41,6 +41,7 @@ class Solution:
             used.add(nums[i])
             prev = i+1   #左pointer 
             last = n-1   #右pointer
+            <br/> 
             while prev!=last :
                 c = nums[i] + nums[prev] +nums[last]
                 if c<0:  prev+=1 # 如果c<0证明左边太小，右pointer往右移动
