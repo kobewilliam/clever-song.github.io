@@ -22,8 +22,7 @@ Given an array nums of n integers, are there elements a, b, c in nums such that 
 题目中需要找出三个数 a,b,c 并满足 a+b+c = 0.那么可以先循环找出 a,b 接下来c便可以用 0 - a - b 来表示。 为了减少时间复杂度，可以先将数组排序，接下来通过两个pointer一个从左，一个从右开始遍历数组。 在遍历的时候，当我们第一次得到正数的时候，这个正数后面2个数必然为正数（数组以及排序），那么我们可以直接break，因为无论怎样这三个数或者再往后都无法相加等于0。
 
 ### Code
-
-### 
+ 
 
 ```python
 class Solution:
