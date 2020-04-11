@@ -12,7 +12,7 @@ tags:
 # LeetCode No 17 Question :Letter Combinations of a Phone Number
 
 ### Description
-![题目](../img/backtrack-phone.png)
+![题目](img/backtrack-phone.png)
 
 ### Analysis
 此题目中，给我们一个串数字，一个数字代表着3或4个字母，我们需要从第一个数字中代表的第一个字母开始往后去和后一个数字代表的每个字母两两结合。因为一个数字代表着几个字母，所以我们很容易想到在python用dict去存储这些。如：
