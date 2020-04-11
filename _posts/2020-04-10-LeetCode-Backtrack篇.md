@@ -1,7 +1,7 @@
 ---
-title:      LeetCode中HashMap例题
-subtitle:   hashmap在python中的应用(dict)
-date:       2020-04-09
+title:      LeetCode中Backtrack例题
+subtitle:   Backtrack在python中的应用(dict)
+date:       2020-04-10
 author:     William Song
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true
