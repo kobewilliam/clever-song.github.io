@@ -6,7 +6,7 @@ author:     William Song
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true
 tags:
-    - Algorithm
+    - Algorithm(medium)
 ---
 
 # LeetCode No 15 Question：3Sum
